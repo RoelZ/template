@@ -1,4 +1,4 @@
-// This configuration is meant as template for Not on Paper projects
+// This configuration is meant as template
 // It's configured to work with Laravel / October / Twig / Vue based projects out-of-the-box
 // It's based on an article by nirjhor (https://medium.com/@nirjhor123/webpack-3-quickstarter-configure-webpack-from-scratch-30a6c394038a)
 
