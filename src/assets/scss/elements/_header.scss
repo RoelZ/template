@@ -1,0 +1,11 @@
+header {
+  .account-name {
+    display: none;
+    color: $white;
+    vertical-align: middle;
+    line-height: 53px;
+    @include media-breakpoint-up(md){
+      display: inline-block;
+    }
+  }
+}

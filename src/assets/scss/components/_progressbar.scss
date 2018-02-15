@@ -1,0 +1,34 @@
+.progressbar {
+  position: relative;
+  border: 1px $gray-dark solid;
+  width: 90%;
+  height: 40px;
+  border-radius: 7px;
+  margin: 5%;
+  cursor: pointer;
+  .bar {
+    height: 100%;
+    display: block;
+    background-color: $green;
+    border-radius: 6px 0 0 6px;
+    transition: 1s;
+    &.width-100{
+      border-radius: 6px;
+    }
+  }
+  .text {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 15px;
+  }
+}

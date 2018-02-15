@@ -1,0 +1,44 @@
+/* Todo: add info and legend */
+
+// Settings
+@import "settings/variables";
+@import "settings/typography";
+@import "custom";  // override built-in custom bootstrap variables (https://getbootstrap.com/docs/4.0/getting-started/options/)
+
+// Tools
+@import "~bootstrap/scss/bootstrap";
+@import "tools/mixins";
+
+// Generic
+
+
+// Elements
+@import "elements/main";
+@import "elements/header";
+@import "elements/custom-checkbox";
+
+// Objects
+@import "objects/fade-button";
+
+// Components
+@import "components/blocks";
+@import "components/buttons";
+@import "components/circle";
+@import "components/controle";
+@import "components/dashboard";
+@import "components/datepicker";
+@import "components/forms";
+@import "components/graph";
+@import "components/graph-adv";
+@import "components/icons";
+@import "components/login";
+@import "components/modal";
+@import "components/navigation";
+@import "components/panel";
+@import "components/progressbar";
+@import "components/progressmenu";
+@import "components/toolbar";
+@import "components/topbar";
+
+// Trumps
+@import "trumps/helpers-classes";

@@ -1,0 +1,105 @@
+<img class="logo" src="assets/images/logo.svg" />
+<span class="title">CADEAU AANMAKEN</span>
+
+<div class="panel-group panel-group-default" id="accordion-cadeau" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-cadeau" href="#panelCadeauOne" aria-expanded="true" aria-controls="panelCadeauOne">
+                    NEDERLANDSE TAAL
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </a>
+            </h4>
+        </div>
+        <div id="panelCadeauOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Name" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="title" placeholder="Title" />
+                    </div>
+
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" rows="6" placeholder="Textarea"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-cadeau" href="#panelCadeauTwo" aria-expanded="false" aria-controls="panelCadeauTwo">
+                    FRANSE TAAL
+                    <i class="fa fa-check hidden" aria-hidden="true"></i>
+                </a>
+            </h4>
+        </div>
+        <div id="panelCadeauTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Name" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="title" placeholder="Title" />
+                    </div>
+
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" rows="6" placeholder="Textarea"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form>
+    <div class="col-xs-12">
+        <div class="form-group">
+            <input type="text" class="form-control" name="aantal" placeholder="* Aantal" required />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="title" placeholder="* Prijs" required />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="title" placeholder="   Punten" />
+        </div>
+        <div class="form-group">
+            <select class="form-control">
+                <option value="">* Selecteer uw provider</option>
+                <option value="merk">&nbsp;&nbsp;&nbsp;Merk</option>
+                <option value="campagne">&nbsp;&nbsp;&nbsp;Campagne</option>
+                <option value="naw-gegevens">&nbsp;&nbsp;&nbsp;NAW gegevens</option>
+                <option value="afhandeling">&nbsp;&nbsp;&nbsp;Afhandeling</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control">
+                <option value="">* Verzendlocatie</option>
+                <option value="verzendlocatie-1">&nbsp;&nbsp;&nbsp;Verzendlocatie 1</option>
+                <option value="verzendlocatie-2">&nbsp;&nbsp;&nbsp;Verzendlocatie 2</option>
+                <option value="verzendlocatie-3">&nbsp;&nbsp;&nbsp;Verzendlocatie 3</option>
+                <option value="verzendlocatie-4">&nbsp;&nbsp;&nbsp;Verzendlocatie 4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="title" placeholder="   URL" />
+        </div>
+
+        <a class="btn btn-default text-left icon-plus" data-toggle="button">
+            AFBEELDING PRODUCT UPLOADEN
+        </a>
+    </div>
+</form>
+
+<div class="col-xs-12">
+    <a class="btn btn-default btn-dark text-left icon-caret-left" data-toggle="button">
+        ANNULEREN
+    </a>
+    <a class="btn btn-primary btn-disabled" data-toggle="button">
+        CADEAU TOEVOEGEN
+    </a>
+</div>

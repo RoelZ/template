@@ -1,0 +1,388 @@
+<div class="container margin-top-30">
+    <div class="row">
+        <form>
+            <div class="col-xs-12 col-sm-4 margin-top-15">
+                <span class="title">Stap 1</span>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" name="user-name" placeholder="Campagne titel">
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" rows="6" placeholder="Textarea"></textarea>
+                </div>
+
+                <select class="form-control">
+                    <option value="">Zoek op</option>
+                    <option value="merk">Merk</option>
+                    <option value="campagne">Campagne</option>
+                    <option value="naw-gegevens">NAW gegevens</option>
+                    <option value="afhandeling">Afhandeling</option>
+                </select>
+            </div>
+            <div class="col-xs-12 col-sm-4 margin-top-15">
+                <span class="title">Stap 3</span>
+
+                <div class="date-desktop">
+
+                    <div class="input-group date datepicker">
+                        <input type="text" class="form-control" name="date" value="" placeholder="Startdatum">
+                        <span class="input-group-addon">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="input-group date datepicker">
+                        <input type="text" class="form-control" name="date" value="" placeholder="Einddatum">
+                        <span class="input-group-addon">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="input-group date datepicker">
+                        <input type="text" class="form-control" name="date" value="" placeholder="Einddatum verwerking">
+                        <span class="input-group-addon">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="date-mobile">
+
+                    <div class="input-group date default-input-group">
+                        <input type="text" class="form-control unstyled" name="date" value="" placeholder="Startdatum" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                        <span class="input-group-addon">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="input-group date default-input-group">
+                        <input type="text" class="form-control unstyled" name="date" value="" placeholder="Einddatum" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                        <span class="input-group-addon">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="input-group date default-input-group">
+                        <input type="text" class="form-control unstyled" name="date" value="" placeholder="Einddatum verwerking" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                        <span class="input-group-addon">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 margin-top-15">
+                <span class="title">Stap 4 / 8</span>
+
+                <div class="fade-button-block">
+                    <a class="btn btn-default fade-button first" data-toggle="button">
+                        Actie code
+                    </a>
+                    <a class="btn btn-default fade-button second" data-toggle="button">
+                        Campagne naam
+                    </a>
+                    <a class="btn btn-default text-left icon-plus extra-input display-none" data-toggle="button">
+                        btn-default text-left icon-plus
+                    </a>
+                    <input type="text" class="fade-input form-control display-none" placeholder="Vul hier uw code in" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="row margin-top-30">
+        <form>
+            <div class="col-xs-12 col-sm-4 margin-top-15">
+                <span class="title">Stap 6 / 9 / 11 / 13</span>
+
+                <div class="select-dropdown">
+                    <div class="panel-group" id="accordion-dropdown-step" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-dropdown-step"
+                                       href="#OptieOne" aria-expanded="true" aria-controls="OptieOne">
+                                        <span>Optie titel</span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="OptieOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <input type="checkbox" class="styled-checkbox" name="optie-1" id="optie-1" />
+                                        <label for="optie-1">Optie 1</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="styled-checkbox" name="optie-2" id="optie-2" />
+                                        <label for="optie-2">Optie 2</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="styled-checkbox" name="optie-3" id="optie-3" />
+                                        <label for="optie-3">Optie 3</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="styled-checkbox" name="optie-4" id="optie-4" />
+                                        <label for="optie-4">Optie 4</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="styled-checkbox" name="optie-5" id="optie-5" />
+                                        <label for="optie-5">Optie 5</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selected-options">
+                    <span>Geselecteerde producten:</span>
+                    <span class="select-option">Optie 1</span>
+                    <span class="select-option">Optie 2</span>
+                    <span class="select-option">Optie 3</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 margin-top-15">
+                <span class="title">Stap 11 (retailer aanmaken)</span>
+
+                <div class="form-group required">
+                    <input type="text" class="form-control" name="user-name" placeholder="* Required" required />
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 margin-top-15">
+                <span class="title">Product aanmaken</span>
+
+                <div class="form-group required">
+                    <select class="form-control">
+                        <option value="">Zoek op</option>
+                        <option value="merk">Merk</option>
+                        <option value="campagne">Campagne</option>
+                        <option value="naw-gegevens">NAW gegevens</option>
+                        <option value="afhandeling">Afhandeling</option>
+                    </select>
+                </div>
+
+                <div class="form-group required">
+                    <input type="text" class="form-control" name="user-name" placeholder="* Required" required />
+                </div>
+
+                <div class="form-group required">
+                    <input type="text" class="form-control" name="user-name" placeholder="* Required" required />
+                </div>
+
+                <div class="form-group required">
+                    <input type="text" class="form-control" name="user-name" placeholder="* Required" required />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="row margin-top-30">
+        <form>
+            <div class="col-xs-12 col-sm-4 margin-top-15">
+                <span class="title">Campagne overzicht / Openstaande Tickets</span>
+
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">Zoek op</option>
+                        <option value="merk">Merk</option>
+                        <option value="campagne">Campagne</option>
+                        <option value="naw-gegevens">NAW gegevens</option>
+                        <option value="afhandeling">Afhandeling</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 margin-top-15">
+                <span class="title">Cashback bedrag aanmaken</span>
+
+                <div class="form-group ">
+                    <input type="text" class="form-control" name="user-name" placeholder="Cashback bedrag" />
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">Selecteer uw uitbetalingsmethode</option>
+                        <option value="rabobank">Rabobank</option>
+                        <option value="ing">ING</option>
+                        <option value="abn-amro">ABN AMRO</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" name="user-name" placeholder="Referentienummer" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 margin-top-15">
+                <span class="title">Deelnemers zoeken</span>
+
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">NAW gegevens</option>
+                        <option value="rabobank">Rabobank</option>
+                        <option value="ing">ING</option>
+                        <option value="abn-amro">ABN AMRO</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" name="user-name" placeholder="Voornaam of Achternaam" />
+                </div>
+
+                <div class="col-xs-4 padding-left-0">
+                    <div class="form-group">
+                        <label for="postcode">Postcode:</label>
+                        <input type="text" class="form-control" name="postcode" id="postcode" placeholder="1122AA" />
+                    </div>
+                </div>
+
+                <div class="col-xs-4 padding-left-7 padding-right-7">
+                    <div class="form-group">
+                        <label for="huisnummer">Huisnummer:</label>
+                        <input type="text" class="form-control" name="huisnummer" id="huisnummer" placeholder="235" />
+                    </div>
+                </div>
+
+                <div class="col-xs-4 padding-right-0">
+                    <div class="form-group">
+                        <label for="toevoeging">Toevoeging:</label>
+                        <input type="text" class="form-control" name="toevoeging" id="toevoeging" placeholder="A" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" name="woonplaats" placeholder="Woonplaats" />
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">Land</option>
+                        <option value="nederland">Nederland</option>
+                        <option value="belgie">België</option>
+                        <option value="frankrijk">Frankrijk</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" name="email" placeholder="E-mail adres" />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="email" placeholder="IBAN / Rekeningnummer" />
+                </div>
+
+                <div class="form-horizontal">
+                    <a class="btn btn-secondary btn-sm" data-toggle="button">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </a>
+                    <span>Extra zoekveld toevoegen</span>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="row margin-top-30">
+        <form>
+            <div class="col-xs-12 col-sm-4">
+                <span class="title">Deelnemers zoeken</span>
+
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">Zoek op</option>
+                        <option value="merk">Merk</option>
+                        <option value="campagne">Campagne</option>
+                        <option value="naw-gegevens">NAW gegevens</option>
+                        <option value="afhandeling">Afhandeling</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">Selecteer een campagne</option>
+                        <option value="merk">Merk</option>
+                        <option value="campagne">Campagne</option>
+                        <option value="naw-gegevens">NAW gegevens</option>
+                        <option value="afhandeling">Afhandeling</option>
+                    </select>
+                </div>
+
+                <div class="date-desktop">
+                    <div class="col-xs-6 padding-left-0">
+                        <div class="input-group date datepicker">
+                            <input type="text" class="form-control" name="date" value="" placeholder="Start datum">
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 padding-right-0">
+                        <div class="input-group date datepicker">
+                            <input type="text" class="form-control" name="date" value="" placeholder="Eind datum">
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="date-mobile">
+                    <div class="col-xs-6 padding-left-0">
+                        <div class="input-group date default-input-group">
+                            <input type="text" class="form-control unstyled" name="date" value="" placeholder="Start datum" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 padding-right-0">
+                        <div class="input-group date default-input-group">
+                            <input type="text" class="form-control unstyled" name="date" value="" placeholder="Eind datum" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">Product</option>
+                        <option value="merk">Merk</option>
+                        <option value="campagne">Campagne</option>
+                        <option value="naw-gegevens">NAW gegevens</option>
+                        <option value="afhandeling">Afhandeling</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" class="styled-checkbox" name="product-onbekend" id="product-onbekend" />
+                    <label for="product-onbekend">Product onbekend</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" name="serienummer" placeholder="Serienummer" />
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">Retailer</option>
+                        <option value="merk">Merk</option>
+                        <option value="campagne">Campagne</option>
+                        <option value="naw-gegevens">NAW gegevens</option>
+                        <option value="afhandeling">Afhandeling</option>
+                    </select>
+                </div>
+
+                <div class="form-horizontal">
+                    <a class="btn btn-secondary btn-sm" data-toggle="button">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </a>
+                    <span>Extra zoekveld toevoegen</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

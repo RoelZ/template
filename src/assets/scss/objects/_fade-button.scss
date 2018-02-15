@@ -1,0 +1,30 @@
+.fade-button-block {
+  position: relative;
+  height: 200px;
+  .fade-button {
+    z-index: $z-index-fade-button;
+    position: absolute;
+    left: 0;
+    &.first{
+      top: 0;
+    }
+    &.second{
+      top: 68px;
+    }
+  }
+  .fade-input {
+    position: absolute;
+    left: 0;
+    top: 68px;
+    width: 100%;
+    padding: 10px;
+    border: 1px $gray-dark solid;
+    border-radius: 5px;
+    z-index: $z-index-fade-input;
+    margin-bottom: 20px;
+  }
+  .extra-input{
+    position: absolute;
+    left: 0;
+  }
+}

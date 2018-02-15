@@ -1,0 +1,202 @@
+.form-control {
+  border-color: $gray-dark;
+  border-radius: 6px;
+  box-shadow: none;
+  color: $gray-darker;
+  height: 42px;
+  &:focus {
+    border-color: $green;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(167, 210, 168, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(167, 210, 168, 0.6);
+  }
+}
+.form-group, .input-group {
+  ::-webkit-input-placeholder {
+    color: #CBCBCB;
+  }
+
+  :-moz-placeholder {
+    color: #CBCBCB;
+  }
+
+  ::-moz-placeholder {
+    color: #CBCBCB;
+  }
+
+  :-ms-input-placeholder {
+    color: rgba(98, 99, 102, 0.49);
+  }
+}
+
+select {
+  &.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('/arrow-down.png') calc(100% - 20px) no-repeat;
+    color: rgba(98, 99, 102, 0.7);
+  }
+}
+
+.checkbox {
+  label {
+    padding-left: 30px;
+    line-height: 30px;
+  }
+  input[type="checkbox"] {
+    margin-left: -30px;
+  }
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  border: 1px solid $gray-dark;
+  border-radius: 0;
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+
+  &:checked {
+    outline: none;
+    background-color: $green;
+  }
+  &:focus {
+    outline: none;
+    border-color: $green;
+  }
+}
+
+label {
+  font-weight: normal;
+}
+
+.form-group {
+  position: relative;
+  &.search {
+    &:after {
+      content: '\f002';
+      font-family: $font-family-icon;
+      position: absolute;
+      right: 20px;
+      top: 7px;
+      font-size: 20px;
+      color: rgba(98, 99, 102, 0.50);
+    }
+  }
+  &.trash {
+    &:after {
+      content: '\f1f8';
+      font-family: $font-family-icon;
+      position: absolute;
+      right: 20px;
+      top: 7px;
+      font-size: 20px;
+      color: $green;
+    }
+  }
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.date-mobile {
+  display: block;
+  @media (min-width: 769px) {
+    display: none;
+  }
+  .form-control {
+    padding: 6px 0 6px 12px;
+  }
+}
+
+.date-desktop {
+  display: none;
+  @media (min-width: 769px) {
+    display: block;
+  }
+}
+
+.bootstrap-datetimepicker-widget table td.old,
+.bootstrap-datetimepicker-widget table td.new {
+  color: #ccc;
+}
+
+.input-group {
+  input {
+    border-right-color: transparent;
+  }
+  .input-group-addon {
+    border-color: $gray-dark;
+    background: $white;
+    padding-right: 20px;
+    padding-left: 0;
+    &.focus {
+      outline: 0;
+      border-color: $green;
+    }
+  }
+  .form-control {
+    border-right: 0;
+    & + .input-group-addon {
+      border-left: 0;
+    }
+
+    &:focus {
+      box-shadow: none;
+      & + .input-group-addon {
+        outline: 0;
+        border-color: $green;
+      }
+      .input-group & {
+        border-color: $green;
+      }
+    }
+  }
+}
+
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.form-horizontal {
+  .btn {
+    vertical-align: text-top;
+  }
+  span {
+    padding-top: 12px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+input {
+  position: relative;
+  width: 150px;
+  height: 20px;
+  color: transparent;
+}
+
+input:before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  content: attr(data-date);
+  display: inline-block;
+  color: black;
+}
+
+input::-webkit-datetime-edit, input::-webkit-inner-spin-button, input::-webkit-clear-button {
+  display: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  color: black;
+  opacity: 1;
+}

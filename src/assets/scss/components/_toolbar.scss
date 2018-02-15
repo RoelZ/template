@@ -1,0 +1,37 @@
+.toolbar {
+  display: none;
+  background: $blue;
+  width: 115px;
+  position: fixed;
+  top: 120px;
+  border-radius: 0 10px 10px 0;
+  @include media-breakpoint-up(md){
+    display: block;
+  }
+
+  .toolbar-options {
+    position: relative;
+    border-bottom: 1px solid $white;
+    height: 145px;
+    display: block;
+
+    .toolbar-block {
+      margin: 0 -50% 0 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      span {
+        color: $white;
+        margin: 0 auto;
+        &.icon-overview,
+        &.icon-plus,
+        &.icon-view {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.progress-bar-menu{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: $z-index-progressmenu;
+  background-color: $white;
+  top: 53px;
+  overflow-x: scroll;
+  li{
+    background-color: $white;
+    &:not(.inactive){
+      span{
+        &::before {
+          font-family: $font-family-icon;
+          content: '\f00c';
+          margin-right: 5px;
+          color: $green;
+        }
+      }
+    }
+    &.inactive{
+      a{
+        opacity: .5;
+        cursor: not-allowed;
+      }
+    }
+    &:last-child{
+      padding: 30px;
+      background-color: $white;
+      a{
+        padding: 12px 15px;
+        &.display-none{
+          display: none;
+        }
+      }
+    }
+    a{
+      display: block;
+      padding: 25px 0;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px $gray-dark solid;
+      text-transform: uppercase;
+      &:hover, &:active, &:focus{
+        text-decoration: none;
+        color: $gray-dark;
+      }
+      span{
+        display: block;
+        width: 100%;
+
+      }
+    }
+  }
+}

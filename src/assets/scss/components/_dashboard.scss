@@ -1,0 +1,151 @@
+.logo-full{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  img{
+    height: 50px;
+  }
+}
+
+.info-counter{
+  background-color: rgba(167,210,168,.12);
+  width: 100%;
+  margin-bottom: 7px;
+  &.margin-bottom-20{
+    margin-bottom: 20px;
+  }
+  .info-counter-text{
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.line-link{
+  display: block;
+  width: 100%;
+  line-height: 25px;
+  text-align: center;
+  color: $gray-dark;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  a{
+    border-bottom: 1px $gray-dark solid;
+    padding-bottom: 3px;
+    &:hover, &:active, &:focus{
+      text-decoration: none;
+      color: $gray-dark;
+    }
+  }
+}
+
+.logo{
+  &.margin-top-15{
+    margin-top: 15px;
+  }
+}
+
+.desc{
+  &.margin-top-30{
+    margin-top: 30px;
+  }
+}
+
+.icon-plus{
+  &.green-background{
+    background-color: $green;
+  }
+}
+
+.mobile{
+  width: 120px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  @include media-breakpoint-up(sm) {
+    width: 240px;
+  }
+  img{
+    width: 30px;
+    @include media-breakpoint-up(sm) {
+      width: 70px;
+    }
+  }
+}
+
+.desktop{
+  width: 120px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  @include media-breakpoint-up(sm) {
+    width: 240px;
+  }
+  img{
+    width: 75px;
+    @include media-breakpoint-up(sm) {
+      width: 165px;
+    }
+  }
+}
+
+.top-content {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  .top-content-btn {
+    height: 75px;
+    .btn {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.novik-logo {
+  display: block;
+  height: 75px;
+  width: 196px;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 5px solid $red;
+  height: 130px;
+  width: 130px;
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    height: 110px;
+    width: 110px;
+  }
+  @include media-breakpoint-up(xl) {
+    height: 130px;
+    width: 130px;
+  }
+  &.orange {
+    border-color: $orange;
+  }
+  &.green {
+    border-color: $green;
+  }
+  span {
+    font-size: 42px;
+    margin: 0 -50% 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &.block-ticket-large-amount{
+      font-size: 30px;
+      @include media-breakpoint-up(lg) {
+        font-size: 23px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 30px;
+      }
+    }
+  }
+}

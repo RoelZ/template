@@ -1,0 +1,152 @@
+.panel-group {
+  font-family: $font-family-default;
+  color: $gray-darker;
+  &.panel-group-default {
+    .panel {
+      &.panel-default {
+        border-radius: 0;
+        border-color: transparent;
+        border-bottom-color: $gray-dark;
+        margin: 0;
+        &:first-child {
+          border-top-color: $gray-dark;
+        }
+        .panel-title {
+          text-transform: uppercase;
+          padding: 0;
+          a {
+            font-weight: 500;
+            font-size: 14px;
+            padding: 47px 15px 48px;
+            .fa-check {
+              padding-left: 15px;
+            }
+            &:after {
+              content: '';
+              background: url('/arrow-up.png') center right no-repeat;
+              float: right;
+              height: 16px;
+              width: 16px;
+            }
+            &.collapsed {
+              &:after {
+                content: '';
+                background: url('/arrow-down.png') center right no-repeat;
+              }
+            }
+          }
+        }
+        & > .panel-heading {
+          & + .panel-collapse {
+            & > .panel-body {
+              padding: 0 15px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fa-check {
+    color: $green;
+  }
+}
+
+.panel-group {
+  .panel {
+    border-radius: 0;
+    &.panel-default {
+      border-radius: 5px;
+      border-color: $gray-dark;
+      margin-bottom: 20px;
+      box-shadow: none;
+      & > .panel-heading {
+        border-radius: 5px;
+        background-color: $white;
+        padding: 0;
+        & + .panel-collapse {
+          & > .panel-body {
+            border: none;
+          }
+        }
+      }
+      .panel-title {
+        color: $gray-dark;
+        padding: 8px 0 9px;
+        & > a {
+          display: block;
+          padding: 2px 15px 3px;
+          &:hover, &:focus {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.select-dropdown {
+  .panel-group {
+    color: $gray-dark;
+    .panel {
+      &.panel-default {
+        & > .panel-heading {
+          display: block;
+          .panel-title > a {
+            padding-right: 15px;
+            span {
+              font-weight: normal;
+              font-size: 14px;
+            }
+          }
+        }
+        a {
+          &:after {
+            content: '';
+            background: url('/arrow-up.png') center right no-repeat;
+            float: right;
+            height: 16px;
+            width: 16px;
+          }
+          &.collapsed {
+            &:after {
+              content: '';
+              background: url('/arrow-down.png') center right no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+  input[type="checkbox"] {
+    &.styled-checkbox {
+      & + label:before {
+        float: right;
+        margin-right: 0;
+      }
+      & + label {
+        margin-top: 35px;
+      }
+    }
+  }
+  .form-group{
+    margin-bottom: 0;
+    &:first-child {
+      input[type="checkbox"] {
+        &.styled-checkbox {
+          & + label {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    &:last-child {
+      input[type="checkbox"] {
+        &.styled-checkbox {
+          & + label {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

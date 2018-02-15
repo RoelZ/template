@@ -1,0 +1,53 @@
+.modal-popup{
+  display: none;
+  position: fixed;
+  z-index: $z-index-modal;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  &.display-block{
+    display: block;
+  }
+  .modal-background {
+    background-color: rgba(0,0,0,0.79);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: .7;
+    &:hover {
+      opacity: 1;
+    }
+    &:before, &:after{
+      position: absolute;
+      left: 15px;
+      content: '';
+      height: 33px;
+      width: 2px;
+      background-color: $white;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.btn-modal{
+  width: 90%;
+  margin: 0 5%;
+  &.margin-top-30{
+    margin-top: 30px;
+  }
+}

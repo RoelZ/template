@@ -1,0 +1,214 @@
+.btn {
+  position: relative;
+  border-color: transparent;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  color: $white;
+  font-family: $font-family-default;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  width: 100%;
+  overflow: hidden;
+  @include media-breakpoint-up(md){
+    text-transform: none;
+  }
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: list-item;
+    width: 92%;
+  }
+  &:after {
+    content: '';
+    font-family: $font-family-icon;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+  }
+  &:before {
+    content: '';
+    font-family: $font-family-icon;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+  }
+  &:hover,
+  &:active,
+  &.active {
+    border-color: transparent;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    color: $white;
+    &:hover {
+      border-color: transparent;
+      color: $white;
+    }
+  }
+
+  &.text-left {
+    text-align: left;
+  }
+
+  .text-xs {
+    font-size: 11px;
+    display: block;
+  }
+
+  &.icon-check {
+    &:hover,
+    &:active,
+    &.active {
+      &:after {
+        content: '\f00c';
+      }
+    }
+  }
+
+  &.icon-plus {
+    &:after {
+      content: '\f067';
+    }
+  }
+
+  &.icon-plus-left {
+    &:before {
+      content: '\f067';
+    }
+  }
+
+  &.icon-left {
+    padding-left: 40px;
+  }
+
+  &.icon-caret-left {
+    &:after {
+      content: '\f0d9';
+      font-size: 20px;
+      top: 8px;
+    }
+  }
+
+  &.icon-caret-right {
+    &:after {
+      content: '\f0da';
+      font-size: 20px;
+      top: 8px;
+    }
+  }
+
+  &.icon-envelope {
+    &:after {
+      content: '\f003';
+    }
+  }
+}
+
+.btn-default {
+  background: $gray;
+  &:hover,
+  &:active,
+  &.active {
+    background: $green;
+
+    &:hover {
+      background: $green;
+    }
+  }
+
+  &.btn-dark {
+    background-color: $btn-dark;
+    &:hover,
+    &:active,
+    &.active {
+      background: $green;
+      &:hover {
+        background: $green;
+      }
+    }
+  }
+
+  &.btn-light {
+    background-color: $btn-light;
+    color: $gray-darker;
+    &:hover,
+    &:active,
+    &.active {
+      background: $green;
+      &:hover {
+        background: $green;
+      }
+    }
+  }
+}
+
+.btn-split {
+  padding: 0;
+  overflow: hidden;
+  span {
+    width: 50%;
+    display: inherit;
+    padding: 11px 32px 12px;
+    vertical-align: middle;
+    &.ellipsis {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0;
+      border-right: 0 solid transparent !important;
+      width: 100%;
+    }
+    &:first-child {
+      border-right: 1px solid $white;
+    }
+  }
+
+  &:after {
+    top: 14px;
+  }
+}
+
+.btn-primary {
+  background: $blue;
+  &:hover,
+  &:active,
+  &.active {
+    background: $green;
+    &:hover {
+      background: $green;
+    }
+  }
+}
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.35;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.btn-secondary {
+  background: $green;
+  i {
+    font-size: 20px;
+  }
+}
+
+.btn-sm {
+  height: 36px;
+  width: 36px;
+  padding: 8px 0;
+}
+
+.btn-small {
+  padding: 7px 15px;
+  &:after {
+    top: 8px;
+  }
+  &.icon-caret-right{
+    &:after {
+      top: 3px;
+    }
+  }
+}

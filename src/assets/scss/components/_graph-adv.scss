@@ -1,0 +1,71 @@
+table{
+  border-spacing: 0;
+  width:100%;
+  th,td{
+    padding: 0;
+  }
+}
+
+.barchart{
+  line-height: 1;
+  overflow: hidden;
+  tr > *:first-child{
+    padding-right: 10px;
+    font-weight: normal;
+  }
+  tr > *:last-child{
+    width: 100%;
+  }
+  tr:not(:last-child) > *:nth-child(2){
+    border-left: 1px solid $gray-darker;
+    padding: 10px 0;
+  }
+  tr:last-child > *:not(:first-child){
+    border-top: 1px solid $gray-darker;
+  }
+  .bars{
+    div{
+      position: relative;
+      height: 1em;
+      width: 0;
+      opacity: 1;
+      transition: .3s cubic-bezier(.65,.55,.3,1);
+      &:not([style]){
+        opacity: .6;
+        label{
+          opacity: 0;
+        }
+      }
+    }
+    label{
+      position: absolute;
+      left: 100%;
+      margin-left: 10px;
+      transition: .3s linear;
+    }
+  }
+  .legend div{
+    float: left;
+    margin-top: 15px;
+    &:not(:first-child){
+      margin-left: 20px;
+    }
+  }
+}
+
+.legend div::before{
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: $black;
+  margin-right: 5px;
+}
+
+.bars [type="man"], .legend [type="man"]::before{
+  background-color: $gray-darker;
+}
+
+.bars [type="vrouw"], .legend [type="vrouw"]::before{
+  background-color:$green;
+}

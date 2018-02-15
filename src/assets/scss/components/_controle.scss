@@ -1,0 +1,23 @@
+.block-divider{
+  margin-bottom: 25px;
+  text-align: center;
+  span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+  }
+  .step-title{
+    text-transform: uppercase;
+    color: $green;
+    margin-bottom: 5px;
+  }
+}
+
+.line{
+  width: 50%;
+  background-color: $gray-border;
+  height: 1px;
+  display: block;
+  margin: 0 25% 25px 25%;
+}

@@ -1,0 +1,28 @@
+input[type="checkbox"] {
+  &.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+    display: inherit;
+
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      width: 100%;
+    }
+
+    & + label:before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $gray-dark;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    &:checked + label:before {
+      background-color: $green;
+    }
+  }
+}

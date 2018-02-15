@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+}
+
+body{
+  color: $gray-darker;
+  background-color: $beige;
+  &.overflow {
+    overflow: hidden;
+  }
+}
+
+a{
+  color: $gray-darker;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  &.step {
+    margin: 0;
+  }
+}
+
+.desc {
+  display: block;
+  width: 80%;
+  margin: 0 10% 20px 10%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.current-receipt {
+  border-radius: 8px;
+  border: 1px solid $gray-dark;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.current-receipt-image {
+  margin: 20px auto;
+  display: block;
+}
+
+.error{
+  color: $red;
+}
+
+.full-line{
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: $gray-light;
+}
+
+.selected-options {
+  margin-left: 15px;
+  line-height: 22px;
+  .select-option {
+    display: block;
+  }
+}

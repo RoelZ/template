@@ -1,0 +1,53 @@
+{% extends "../layouts/base.htm" %}
+
+{% block page %}
+
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class="col-xs-12">
+                    <img class="logo" src="assets/images/logo.svg"/>
+                    <span class="title step">Stap 1</span>
+                    <span class="title">Campagne naam</span>
+                    <span class="desc">
+                            Hieronder kunt u de naam van uw
+                            campagne invullen. Daarna kunt u de naam
+                            van de actie en brand invullen.
+                        </span>
+                </div>
+
+                <form class="col-xs-12 flex-grow">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="user-name" placeholder="Campagne titel">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" rows="6" placeholder="Beschrijving campagne"></textarea>
+                    </div>
+
+                    <select class="form-control">
+                        <option value="">Zoek op</option>
+                        <option value="merk">Merk</option>
+                        <option value="campagne">Campagne</option>
+                        <option value="naw-gegevens">NAW gegevens</option>
+                        <option value="afhandeling">Afhandeling</option>
+                    </select>
+                </form>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="container bottom">-->
+        <!--<div class="row">-->
+            <!--<div class="col-xs-12 ">-->
+                <!--<a class="btn btn-primary btn-disabled" data-toggle="button">-->
+                    <!--<span>-->
+                        <!--btn-primary btn-disabled-->
+                    <!--</span>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+{% endblock %}

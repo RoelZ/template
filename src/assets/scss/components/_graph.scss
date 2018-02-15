@@ -1,0 +1,57 @@
+.graph{
+  float: left;
+  width: 90%;
+  margin-top: 20px;
+  .graph-block {
+    float: left;
+    width: 100%;
+    .date {
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      height: 30px;
+      border-right: 1px $gray-dark solid;
+      &.border-zero{
+        border: 0;
+      }
+    }
+    .bar-con {
+      float: left;
+      width: 80%;
+      height: 15px;
+      .bar {
+        float: left;
+        height: 15px;
+      }
+      .text{
+        float: left;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+    .bar-con:nth-child(odd) .bar {
+      background-color: $gray-dark;
+    }
+    .bar-con:nth-child(even) .bar {
+      background-color: $green;
+    }
+    .legenda{
+      width: 80%;
+      display: inline-block;
+      border-top: 1px $gray-dark solid;
+      padding-top: 20px;
+      .gender-color{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+      }
+      .gender-text{
+        margin-right: 20px;
+      }
+    }
+  }
+}
+

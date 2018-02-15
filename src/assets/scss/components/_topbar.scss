@@ -1,0 +1,23 @@
+.topbar {
+  background-color: $gray-lighter;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  @include media-breakpoint-up(md){
+    display: none;
+  }
+  .account-name {
+    font-size: 14px;
+    display: inline-block;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 15px;
+  }
+  a {
+    float: right;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px $gray-darker solid;
+  }
+}
